@@ -53,7 +53,7 @@ class Song
 
 #Returns all the songs in ascending(a-z)alphabetical order.
   def self.alphabetical
-    @@all.sort_by { |song| sort.name }
+    @@all.sort_by { |song| song.name }
     #@@all.sort { |a, b| a.name <=> b.name} #using comparison operator<=> to alphabetize
   end
 
